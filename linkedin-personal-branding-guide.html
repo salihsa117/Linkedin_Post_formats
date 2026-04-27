@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل بيع كورس البيرسونال براندينج على لينكد إن</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0f;
+    --gold: #c9a227;
+    --gold-light: #e8c547;
+    --gold-dim: #7a5f0f;
+    --blue: #0077b5;
+    --blue-light: #00a0dc;
+    --cream: #faf6ef;
+    --warm-gray: #f2ede5;
+    --mid-gray: #8a8275;
+    --dark-card: #12100e;
+    --border: rgba(201,162,39,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    direction: rtl;
+    overflow-x: hidden;
+  }
+
+  /* Hero */
+  .hero {
+    background: var(--ink);
+    position: relative;
+    padding: 80px 40px 60px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(201,162,39,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(0,119,181,0.1) 0%, transparent 50%);
+  }
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(201,162,39,0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(201,162,39,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,162,39,0.15);
+    border: 1px solid rgba(201,162,39,0.3);
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-family: 'Tajawal', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+  .hero h1 span {
+    color: var(--gold);
+    display: inline;
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.55);
+    max-width: 650px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    border-right: 2px solid var(--gold-dim);
+    padding-right: 20px;
+  }
+  .stat:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--gold);
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.45);
+  }
+
+  /* Source Banner */
+  .source-bar {
+    background: #0077b5;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .source-bar span { color: rgba(255,255,255,0.7); font-size: 0.8rem; }
+  .source-link {
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    background: rgba(255,255,255,0.15);
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  /* Main Layout */
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* TOC */
+  .toc {
+    background: var(--ink);
+    color: #fff;
+    padding: 36px 40px;
+    margin: 48px 0 0;
+    border-radius: 16px;
+    border: 1px solid rgba(201,162,39,0.15);
+  }
+  .toc-title {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .toc-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.07);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.88rem;
+  }
+  .toc-item:hover {
+    background: rgba(201,162,39,0.1);
+    border-color: rgba(201,162,39,0.3);
+    color: #fff;
+  }
+  .toc-num {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    color: var(--gold);
+    font-size: 1rem;
+    min-width: 24px;
+  }
+
+  /* Sections */
+  .section {
+    margin-top: 56px;
+    scroll-margin-top: 20px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(201,162,39,0.2);
+  }
+  .step-badge {
+    background: var(--ink);
+    color: var(--gold);
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 900;
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--gold-dim);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .section-title {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: var(--ink);
+  }
+
+  .section-intro {
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a1510 100%);
+    border: 1px solid rgba(201,162,39,0.15);
+    border-right: 3px solid var(--gold);
+    color: rgba(255,255,255,0.8);
+    padding: 20px 24px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    margin-bottom: 24px;
+  }
+  .section-intro strong { color: var(--gold); }
+
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e8e2d8;
+    border-radius: 12px;
+    padding: 22px;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 3px;
+    height: 0;
+    background: var(--gold);
+    transition: height 0.3s;
+  }
+  .card:hover::before { height: 100%; }
+  .card:hover { border-color: rgba(201,162,39,0.3); box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+  .card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .card-title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .card-desc {
+    font-size: 0.88rem;
+    color: #6b6458;
+    line-height: 1.7;
+  }
+
+  /* Step List */
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .step-item {
+    display: flex;
+    gap: 16px;
+    background: #fff;
+    border: 1px solid #e8e2d8;
+    border-radius: 12px;
+    padding: 20px 22px;
+    align-items: flex-start;
+    transition: all 0.2s;
+  }
+  .step-item:hover {
+    border-color: rgba(201,162,39,0.3);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .step-num {
+    background: var(--ink);
+    color: var(--gold);
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-body { flex: 1; }
+  .step-title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .step-desc {
+    font-size: 0.88rem;
+    color: #6b6458;
+    line-height: 1.75;
+  }
+  .step-desc strong { color: var(--ink); font-weight: 600; }
+
+  /* Highlight Box */
+  .highlight {
+    background: linear-gradient(135deg, rgba(201,162,39,0.08) 0%, rgba(201,162,39,0.04) 100%);
+    border: 1px solid rgba(201,162,39,0.25);
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 24px;
+  }
+  .highlight-title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--gold-dim);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .highlight ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .highlight ul li {
+    font-size: 0.9rem;
+    color: #4a4035;
+    padding-right: 20px;
+    position: relative;
+    line-height: 1.7;
+  }
+  .highlight ul li::before {
+    content: '◆';
+    position: absolute;
+    right: 0;
+    color: var(--gold);
+    font-size: 0.5rem;
+    top: 6px;
+  }
+
+  /* Funnel Visual */
+  .funnel {
+    background: var(--ink);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(201,162,39,0.15);
+  }
+  .funnel-title {
+    font-family: 'Tajawal', sans-serif;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .funnel-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .funnel-stage {
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+    padding: 14px 20px;
+    position: relative;
+    border-bottom: none;
+  }
+  .funnel-stage:nth-child(1) { background: rgba(201,162,39,0.25); border-radius: 12px 12px 0 0; clip-path: polygon(0 0, 100% 0, 92% 100%, 8% 100%); }
+  .funnel-stage:nth-child(2) { background: rgba(201,162,39,0.18); clip-path: polygon(8% 0, 92% 0, 84% 100%, 16% 100%); width: 92%; }
+  .funnel-stage:nth-child(3) { background: rgba(201,162,39,0.13); clip-path: polygon(16% 0, 84% 0, 76% 100%, 24% 100%); width: 84%; }
+  .funnel-stage:nth-child(4) { background: rgba(201,162,39,0.09); clip-path: polygon(24% 0, 76% 0, 68% 100%, 32% 100%); width: 76%; }
+  .funnel-stage:nth-child(5) { background: rgba(201,162,39,0.35); clip-path: polygon(32% 0, 68% 0, 50% 100%, 50% 100%); width: 68%; border-radius: 0 0 4px 4px; }
+
+  .funnel-stage-name {
+    color: #fff;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .funnel-stage-desc {
+    color: rgba(255,255,255,0.55);
+    font-size: 0.75rem;
+    margin-top: 2px;
+  }
+
+  /* Framework Box */
+  .framework {
+    background: linear-gradient(135deg, #0a0a0f 0%, #12100e 100%);
+    border: 1px solid rgba(201,162,39,0.2);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 24px;
+  }
+  .framework-title {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .framework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+  }
+  .framework-item {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 16px;
+    transition: all 0.2s;
+  }
+  .framework-item:hover {
+    background: rgba(201,162,39,0.08);
+    border-color: rgba(201,162,39,0.2);
+  }
+  .framework-item-icon { font-size: 1.4rem; margin-bottom: 8px; }
+  .framework-item-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  .framework-item-desc {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.78rem;
+    line-height: 1.6;
+  }
+
+  /* Content Types */
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .content-type {
+    background: #fff;
+    border: 1px solid #e8e2d8;
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .content-type::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--blue));
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .content-type:hover::after { transform: scaleX(1); }
+  .content-type-tag {
+    display: inline-block;
+    background: var(--warm-gray);
+    color: var(--mid-gray);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .content-type-name {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .content-type-desc {
+    font-size: 0.83rem;
+    color: #6b6458;
+    line-height: 1.65;
+  }
+
+  /* Warning / Tip */
+  .tip {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: rgba(0,119,181,0.06);
+    border: 1px solid rgba(0,119,181,0.2);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .tip-icon { font-size: 1.3rem; flex-shrink: 0; }
+  .tip-text { font-size: 0.88rem; color: #3a4a5a; line-height: 1.75; }
+  .tip-text strong { color: #0077b5; font-weight: 700; }
+
+  .warn {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: rgba(201,162,39,0.07);
+    border: 1px solid rgba(201,162,39,0.25);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .warn-text { font-size: 0.88rem; color: #5a4a20; line-height: 1.75; }
+  .warn-text strong { color: var(--gold-dim); font-weight: 700; }
+
+  /* Result Card */
+  .result-card {
+    background: linear-gradient(135deg, #0a0a0f 0%, #0d1520 100%);
+    border: 1px solid rgba(0,119,181,0.3);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .result-num {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .result-body { flex: 1; min-width: 200px; }
+  .result-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+  .result-desc {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+  /* Checklist */
+  .checklist {
+    background: #fff;
+    border: 1px solid #e8e2d8;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .checklist-title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ink);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .checklist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .check-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 0.88rem;
+    color: #4a4035;
+    line-height: 1.65;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0ebe2;
+  }
+  .check-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .check-box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+
+  /* Footer */
+  .footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 40px;
+    margin-top: 80px;
+    font-size: 0.83rem;
+    line-height: 1.8;
+  }
+  .footer strong { color: var(--gold); }
+
+  /* Phase divider */
+  .phase-divider {
+    text-align: center;
+    margin: 48px 0 0;
+    position: relative;
+  }
+  .phase-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.3;
+  }
+  .phase-label {
+    display: inline-block;
+    background: var(--cream);
+    padding: 0 20px;
+    position: relative;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 60px 20px 40px; }
+    .hero-stats { gap: 20px; }
+    .source-bar { padding: 10px 20px; gap: 10px; }
+    .container { padding: 0 16px; }
+    .toc { padding: 24px 20px; }
+    .cards { grid-template-columns: 1fr; }
+    .framework-grid { grid-template-columns: 1fr 1fr; }
+    .content-grid { grid-template-columns: 1fr; }
+    .result-card { flex-direction: column; gap: 12px; }
+    .result-num { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🎯 دليل معرفي عملي · إسلام صلاح Method</div>
+    <h1>نظام بيع كورس<br><span>البيرسونال براندينج</span><br>على لينكد إن</h1>
+    <p class="hero-sub">
+      دليل شامل خطوة بخطوة مبني على منهجية <strong style="color:var(--gold)">إسلام صلاح</strong> — مؤسس Adscope ومتخصص الفانلز والإعلانات للمدربين — لبيع كورسات هاي تيكيت عبر البيرسونال براندينج على لينكد إن.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">$132K</span>
+        <span class="stat-label">إيراد في 90 يوم<br>(نتيجة حقيقية - Adscope)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">52+</span>
+        <span class="stat-label">دولة عملت معها<br>Adscope</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">7</span>
+        <span class="stat-label">مراحل عملية<br>في هذا الدليل</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SOURCE BAR -->
+<div class="source-bar">
+  <span>📌 المصادر:</span>
+  <a class="source-link" href="https://www.youtube.com/@officialeslamsalah" target="_blank">YouTube</a>
+  <a class="source-link" href="https://www.linkedin.com/in/eslamsalahofficial" target="_blank">LinkedIn</a>
+  <a class="source-link" href="https://www.facebook.com/coacheslamsalah" target="_blank">Facebook</a>
+  <a class="source-link" href="https://www.tiktok.com/@officialeslamsalah" target="_blank">TikTok</a>
+  <a class="source-link" href="https://courses.eslamsalah.com" target="_blank">الكورسات</a>
+</div>
+
+<div class="container">
+
+  <!-- TOC -->
+  <div class="toc">
+    <div class="toc-title">🗺️ خريطة الدليل</div>
+    <div class="toc-grid">
+      <a href="#s1" class="toc-item"><span class="toc-num">01</span>فهم النظام والمنهجية</a>
+      <a href="#s2" class="toc-item"><span class="toc-num">02</span>بناء بروفايل لينكد إن قاتل</a>
+      <a href="#s3" class="toc-item"><span class="toc-num">03</span>صياغة العرض والـ Offer</a>
+      <a href="#s4" class="toc-item"><span class="toc-num">04</span>استراتيجية المحتوى</a>
+      <a href="#s5" class="toc-item"><span class="toc-num">05</span>بناء الفانل وجذب الليدز</a>
+      <a href="#s6" class="toc-item"><span class="toc-num">06</span>إتمام البيع (Sales System)</a>
+      <a href="#s7" class="toc-item"><span class="toc-num">07</span>التوسع والإعلانات الممولة</a>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <div class="section" id="s1">
+    <div class="section-header">
+      <div class="step-badge">المرحلة الأولى</div>
+      <h2 class="section-title">🧠 فهم النظام والمنهجية الأساسية</h2>
+    </div>
+
+    <div class="section-intro">
+      منهجية إسلام صلاح مش بتبيع بالشكل التقليدي. هي قائمة على مبدأ <strong>"النظام التسويقي الذي يمول نفسه بنفسه"</strong> — يعني الكورس الصغير بيدفع تمن الإعلانات وأنت بتبيع الهاي تيكيت من الليدز اللي جت. ده بيخلي الأمر مستدام من اليوم الأول.
+    </div>
+
+    <div class="result-card">
+      <div class="result-num">🏆</div>
+      <div class="result-body">
+        <div class="result-title">الـ Resala Framework — النظام المعتمد لدى Adscope</div>
+        <div class="result-desc">
+          منحت إسلام صلاح جائزة Gold Stevie Award وجائزة TITAN Business Award عن هذا النظام. النتيجة: تحويل $10,861 إعلانات إلى $132,117 إيراد في 90 يوم فقط لكوتش ADHD بدون متابعين كتير أو اسم كبير.
+        </div>
+      </div>
+    </div>
+
+    <div class="framework">
+      <div class="framework-title">⚙️ أعمدة نظام الـ Resala Framework</div>
+      <div class="framework-grid">
+        <div class="framework-item">
+          <div class="framework-item-icon">💰</div>
+          <div class="framework-item-name">Mini Course منخفض السعر</div>
+          <div class="framework-item-desc">كورس صغير بـ $17-37 يدفع تمن الإعلانات من أول يوم</div>
+        </div>
+        <div class="framework-item">
+          <div class="framework-item-icon">🎯</div>
+          <div class="framework-item-name">Filtering System</div>
+          <div class="framework-item-desc">تصفية الليدز الضعيفة وجذب العميل الجاهز للشراء</div>
+        </div>
+        <div class="framework-item">
+          <div class="framework-item-icon">💬</div>
+          <div class="framework-item-name">DM-Based Sales</div>
+          <div class="framework-item-desc">البيع عبر محادثات مباشرة لا بيج سيلز أو ضغط</div>
+        </div>
+        <div class="framework-item">
+          <div class="framework-item-icon">🎤</div>
+          <div class="framework-item-name">Masterclass (3 أيام)</div>
+          <div class="framework-item-desc">ويبينار/ماستر كلاس يحوّل المهتمين لعملاء فعليين</div>
+        </div>
+        <div class="framework-item">
+          <div class="framework-item-icon">📈</div>
+          <div class="framework-item-name">High Ticket Offer</div>
+          <div class="framework-item-desc">الكورس الأساسي $1000+ يُباع لمن أكمل الرحلة</div>
+        </div>
+        <div class="framework-item">
+          <div class="framework-item-icon">🔁</div>
+          <div class="framework-item-name">Self-Funding Loop</div>
+          <div class="framework-item-desc">إيراد الميني كورس يُعاد استثماره في إعلانات جديدة</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <span class="tip-icon">💡</span>
+      <div class="tip-text"><strong>الفكرة الجوهرية:</strong> لينكد إن هو المنصة الأمثل للبيرسونال براندينج لأن جمهوره محترفون يبحثون عن تطوير ذاتي ومهني، ومستعدون للدفع مقابل المعرفة. البيرسونال براندينج + فانل محترف = آلة مبيعات تعمل 24/7.</div>
+    </div>
+  </div>
+
+  <div class="phase-divider"><span class="phase-label">المرحلة الثانية — الأساس</span></div>
+
+  <!-- SECTION 2 -->
+  <div class="section" id="s2">
+    <div class="section-header">
+      <div class="step-badge">الخطوة الثانية</div>
+      <h2 class="section-title">👤 بناء بروفايل لينكد إن قاتل</h2>
+    </div>
+
+    <div class="section-intro">
+      بروفايلك على لينكد إن هو صفحة البيع الأولى. إسلام صلاح بيقول: <strong>"أول حاجة أي عميل محتمل بيعملها هو يزور بروفايلك"</strong> — لو البروفايل مش واضح ومقنع، الكلام كله مش هينفع.
+    </div>
+
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">🖼️ الصورة الشخصية والبانر (Visual Identity)</div>
+          <div class="step-desc">صورة شخصية احترافية بإضاءة جيدة وخلفية نظيفة. البانر لازم يحمل <strong>رسالة واحدة واضحة</strong> = "أنا بساعد [شريحة محددة] تحقق [نتيجة محددة]". استخدم Canva أو مصمم احترافي. اللون والفونت لازم يعكسوا البراند بتاعك.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">✍️ الـ Headline — الجملة الأقوى في بروفايلك</div>
+          <div class="step-desc">مش "مدرب معتمد" أو "كوتش". الصيغة الصح: <strong>[أنت بتعمل إيه] + [لمين] + [النتيجة]</strong>. مثال: "أساعد المدربين العرب يبيعوا كورساتهم بـ $1000+ عبر لينكد إن بدون إعلانات باهظة". الـ Headline ظاهر في كل مكان — منه بدأ.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">📖 الـ About / Summary — قصة مقنعة لا سيرة ذاتية</div>
+          <div class="step-desc">ابدأ بالمشكلة اللي بيعانيها عميلك المثالي. ثم قدّم نفسك كحل. أضف <strong>نتائج حقيقية وأرقام</strong>. أختم بـ CTA واضح: "تواصل معي على الإنبوكس" أو "سجّل في الويبينار". لا أكثر من 5 فقرات.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">📌 الـ Featured Section — أول ما يشوفه الزائر</div>
+          <div class="step-desc">ضع هنا: <strong>Lead Magnet مجاني</strong> (PDF، تشيكليست)، فيديو مقدمة عنك، رابط الماستر كلاس أو الويبينار القادم. ده أقوى سلاح للتحويل من زيارة لليد.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-title">⭐ الـ Recommendations — الدليل الاجتماعي</div>
+          <div class="step-desc">اطلب من عملاء سابقين كتابة توصية تصف <strong>النتيجة الملموسة</strong> اللي حققوها معاك — مش مجرد "إنسان رائع". التوصيات دي بتبني الثقة تلقائياً قبل أي كلام بيع.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checklist">
+      <div class="checklist-title">✅ تشيكليست البروفايل الاحترافي</div>
+      <div class="checklist-items">
+        <div class="check-item"><div class="check-box"></div><span>صورة شخصية واضحة واحترافية</span></div>
+        <div class="check-item"><div class="check-box"></div><span>بانر يحمل رسالة قيمة واضحة</span></div>
+        <div class="check-item"><div class="check-box"></div><span>Headline يستهدف الشريحة وينص على النتيجة</span></div>
+        <div class="check-item"><div class="check-box"></div><span>About يبدأ بالمشكلة وينهي بـ CTA</span></div>
+        <div class="check-item"><div class="check-box"></div><span>Featured Section بها Lead Magnet أو فيديو تعريفي</span></div>
+        <div class="check-item"><div class="check-box"></div><span>3 توصيات على الأقل بنتائج حقيقية</span></div>
+        <div class="check-item"><div class="check-box"></div><span>Custom URL (linkedin.com/in/اسمك)</span></div>
+        <div class="check-item"><div class="check-box"></div><span>إضافة الكلمات المفتاحية في كل الأقسام</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phase-divider"><span class="phase-label">المرحلة الثالثة — العرض</span></div>
+
+  <!-- SECTION 3 -->
+  <div class="section" id="s3">
+    <div class="section-header">
+      <div class="step-badge">الخطوة الثالثة</div>
+      <h2 class="section-title">🎯 صياغة العرض المثالي (Irresistible Offer)</h2>
+    </div>
+
+    <div class="section-intro">
+      قبل ما تفكر في محتوى أو إعلانات، لازم يكون عندك <strong>عرض قوي لا يُقاوَم</strong>. إسلام صلاح بيقول: "مش الإعلان اللي بيبيع، العرض هو اللي بيبيع." عرض ضعيف + إعلان قوي = هدر فلوس.
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">🪜</span>
+        <div class="card-title">Offer Ladder (سلم العروض)</div>
+        <div class="card-desc">ابن 3 مستويات: <br>① Mini Course $17-37<br>② Core Course $200-500<br>③ High Ticket $1000+<br>كل مستوى يوصل العميل للتالي.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">💎</span>
+        <div class="card-title">القيمة الواضحة والمحددة</div>
+        <div class="card-desc">مش "ستتعلم البيرسونال براندينج".<br>الصح: "خلال 30 يوم ستصل لـ 1000 متابع مستهدف وتبيع أول كورس لك على لينكد إن."</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🛡️</span>
+        <div class="card-title">ضمان وإزالة الخطر</div>
+        <div class="card-desc">ضمان استرداد 14-30 يوم يرفع معدل التحويل بشكل ملحوظ. العميل خايف يخسر — أزيل الخوف دا بالضمان.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">⏰</span>
+        <div class="card-title">الندرة والإلحاح الحقيقي</div>
+        <div class="card-desc">سعر مبكر Early Bird، عدد محدود من المقاعد، بونص ينتهي في تاريخ معين — لكن لازم يكون حقيقي مش كذب.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🎁</span>
+        <div class="card-title">البونص Stack</div>
+        <div class="card-desc">أضف قيمة أكبر من السعر: تمبليتس، جروب خاص، جلسة 1:1، مكتبة موارد. اجعل العميل يحس إنه "سارق" بسعر منخفض.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🏆</span>
+        <div class="card-title">Social Proof محدد</div>
+        <div class="card-desc">"ساعدت 47 مدرباً" أقوى من "ساعدت آلاف المدربين". الأرقام الدقيقة تبني ثقة أكبر من الأرقام الكبيرة المبهمة.</div>
+      </div>
+    </div>
+
+    <div class="warn">
+      <span class="tip-icon">⚠️</span>
+      <div class="warn-text"><strong>خطأ شائع يحذر منه إسلام صلاح:</strong> المدربون يبدأوا بالكورس الغالي مباشرة. النظام الصح: ابدأ بـ Lead Magnet مجاني → Mini Course رخيص → Core Course → High Ticket. كل خطوة تبني ثقة وتموّل التالية.</div>
+    </div>
+  </div>
+
+  <div class="phase-divider"><span class="phase-label">المرحلة الرابعة — المحتوى</span></div>
+
+  <!-- SECTION 4 -->
+  <div class="section" id="s4">
+    <div class="section-header">
+      <div class="step-badge">الخطوة الرابعة</div>
+      <h2 class="section-title">📝 استراتيجية المحتوى على لينكد إن</h2>
+    </div>
+
+    <div class="section-intro">
+      المحتوى على لينكد إن مش مجرد بوستات. هو <strong>آلة بناء ثقة وجذب عملاء</strong>. الاستراتيجية الصح: 80% قيمة، 20% بيع — لكن كل بوست قيمة لازم يقود العميل خطوة نحو العرض بتاعك.
+    </div>
+
+    <div class="content-grid">
+      <div class="content-type">
+        <span class="content-type-tag">أسبوعياً</span>
+        <div class="content-type-name">📊 بوست القصة (Storytelling)</div>
+        <div class="content-type-desc">شارك قصة نجاح عميل أو تحدي واجهته وكيف حللته. القصص بتبني اتصال عاطفي. الصيغة: المشكلة → الصراع → الحل → النتيجة.</div>
+      </div>
+      <div class="content-type">
+        <span class="content-type-tag">أسبوعياً</span>
+        <div class="content-type-name">💡 بوست الـ Tips (الأسرار)</div>
+        <div class="content-type-desc">5 طرق لـ... / أكبر خطأ في... / اللي مش بيقولهولك عن... يجذب تفاعل عالي لأنه يعطي قيمة فورية. لازم ينهي بـ CTA.</div>
+      </div>
+      <div class="content-type">
+        <span class="content-type-tag">أسبوعياً</span>
+        <div class="content-type-name">🤔 بوست الـ Opinion (الرأي)</div>
+        <div class="content-type-desc">"الرأي الجريء" بيجيب تفاعل ضخم. "معظم المدربين بيغلطوا في كذا" — فكرة مخالفة للسائد تجذب نقاش وتثبّت خبرتك.</div>
+      </div>
+      <div class="content-type">
+        <span class="content-type-tag">أسبوعياً</span>
+        <div class="content-type-name">📹 فيديو قصير (Native Video)</div>
+        <div class="content-type-desc">لينكد إن بيكافئ الفيديو الـ native. 60-90 ثانية. ابدأ بـ Hook قوي في أول ثانيتين. الكاميرا في وجهك. لا موسيقى مزعجة.</div>
+      </div>
+      <div class="content-type">
+        <span class="content-type-tag">شهرياً</span>
+        <div class="content-type-name">📄 Article طويل (Long Form)</div>
+        <div class="content-type-desc">مقالة تفصيلية عن موضوع محوري في مجالك. الـ Articles على لينكد إن بتظهر في جوجل وتجيب ليدز عضوية مستمرة.</div>
+      </div>
+      <div class="content-type">
+        <span class="content-type-tag">شهرياً</span>
+        <div class="content-type-name">📊 Document / Carousel</div>
+        <div class="content-type-desc">PDF قابل للتصفح داخل لينكد إن. أعلى تفاعل مع المحتوى. استخدمه لـ: "دليل مجاني"، "خطوات"، "قائمة مقارنة".</div>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <div class="highlight-title">🔑 قواعد كتابة المحتوى على لينكد إن (Hook Formula)</div>
+      <ul>
+        <li>أول سطر = الـ Hook — ده اللي بيحدد إذا كانوا هيضغطوا "see more" أم لا. اجعله مفاجئاً أو يطرح سؤالاً.</li>
+        <li>استخدم سطراً واحداً لكل فكرة — لينكد إن مش فيسبوك، لا بلوك نصوص طويلة.</li>
+        <li>أضف white space بين كل سطرين — الانفتاح البصري يزيد القراءة.</li>
+        <li>انهِ كل بوست بسؤال يدعو للتعليق أو بـ CTA واضح (تعليق، رابط، DM).</li>
+        <li>انشر في أوقات الذروة: 7-9 صباحاً أو 12-2 ظهراً أو 5-7 مساءً بتوقيت جمهورك.</li>
+        <li>الاتساق أهم من الإتقان — 3-5 بوستات أسبوعياً أفضل من بوست مثالي كل أسبوعين.</li>
+      </ul>
+    </div>
+
+    <div class="tip">
+      <span class="tip-icon">🔁</span>
+      <div class="tip-text"><strong>استراتيجية "التضخيم" من إسلام صلاح:</strong> كل بوست ناجح على لينكد إن → حوّله لريل على تيك توك وإنستجرام → ريبوست على فيسبوك → حوّله لـ email → اجمع أفضل البوستات في Article. نفس المحتوى × 5 منصات = 5 أضعاف الوصول.</div>
+    </div>
+  </div>
+
+  <div class="phase-divider"><span class="phase-label">المرحلة الخامسة — الفانل</span></div>
+
+  <!-- SECTION 5 -->
+  <div class="section" id="s5">
+    <div class="section-header">
+      <div class="step-badge">الخطوة الخامسة</div>
+      <h2 class="section-title">⚡ بناء الفانل وجذب الليدز</h2>
+    </div>
+
+    <div class="section-intro">
+      المحتوى بيجيب انتباه — الفانل هو اللي بيحوّل الانتباه لفلوس. إسلام صلاح بيقول إن <strong>95% من المتابعين مش جاهزين للشراء الآن</strong>، لكن الفانل الصح بيحافظ عليهم لحد ما يجهزوا.
+    </div>
+
+    <div class="funnel">
+      <div class="funnel-title">🎯 فانل البيرسونال براندينج على لينكد إن (Resala Style)</div>
+      <div class="funnel-stages">
+        <div class="funnel-stage">
+          <div class="funnel-stage-name">🌐 Awareness — الوعي</div>
+          <div class="funnel-stage-desc">بوستات + فيديوهات + مقالات + تفاعل في التعليقات</div>
+        </div>
+        <div class="funnel-stage">
+          <div class="funnel-stage-name">🎁 Lead Magnet — الهدية</div>
+          <div class="funnel-stage-desc">PDF مجاني / تشيكليست / ميني كورس مجاني → بيجمع الإيميل</div>
+        </div>
+        <div class="funnel-stage">
+          <div class="funnel-stage-name">💰 Mini Course $17-37</div>
+          <div class="funnel-stage-desc">يصفّي اللايدز الجادة ويموّل الإعلانات</div>
+        </div>
+        <div class="funnel-stage">
+          <div class="funnel-stage-name">🎤 Masterclass / Webinar</div>
+          <div class="funnel-stage-desc">ماستر كلاس 3 أيام أو ويبينار مباشر يبني ثقة عميقة</div>
+        </div>
+        <div class="funnel-stage">
+          <div class="funnel-stage-name">🏆 High Ticket</div>
+          <div class="funnel-stage-desc">البيع للمهتمين الجادين عبر Strategy Call</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-num">A</div>
+        <div class="step-body">
+          <div class="step-title">الـ Lead Magnet — المغناطيس المجاني</div>
+          <div class="step-desc">أنشئ PDF أو فيديو مجاني يحل مشكلة واحدة صغيرة لعميلك المثالي. على لينكد إن: انشر Document بوست وقول "كومنت كلمة X وهبعتهولك". ده بيجيب إيميلات كتير وبيبوست في التايم لاين تاني.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">B</div>
+        <div class="step-body">
+          <div class="step-title">التواصل الشخصي (Connection Outreach)</div>
+          <div class="step-desc">أرسل <strong>10-20 طلب اتصال يومياً</strong> مع رسالة شخصية قصيرة (لا بيع!). بعد القبول: ابدأ بقيمة أو سؤال ذكي. الصيغة الصح: "شفت بوستك عن [X] واتفقت معاك تماماً في نقطة [Y]..." — الشخصنة بتفتح الأبواب.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">C</div>
+        <div class="step-body">
+          <div class="step-title">الـ Webinar / Masterclass</div>
+          <div class="step-desc">انظّم لايف أسبوعي أو ماستر كلاس مجاني كل شهر. على لينكد إن اللايف بيصل لعدد أكبر بكتير من البوست العادي. في الماستر كلاس: 70% قيمة حقيقية، 30% العرض بأسلوب تعليمي — مش hard sell.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">D</div>
+        <div class="step-body">
+          <div class="step-title">بناء الـ Email List</div>
+          <div class="step-desc">لينكد إن هو <strong>عقارات مستأجرة</strong> — ممكن تتقطع في أي وقت. حوّل كل ليد على لينكد إن لإيميل في قائمتك. استخدم: Mailchimp، ConvertKit، ActiveCampaign. الإيميل = أصل حقيقي تملكه.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phase-divider"><span class="phase-label">المرحلة السادسة — البيع</span></div>
+
+  <!-- SECTION 6 -->
+  <div class="section" id="s6">
+    <div class="section-header">
+      <div class="step-badge">الخطوة السادسة</div>
+      <h2 class="section-title">💼 نظام البيع (Sales System)</h2>
+    </div>
+
+    <div class="section-intro">
+      "البيع مش ضغط — هو مساعدة شخص يتخذ القرار الصح." هذا هو فلسفة إسلام صلاح في البيع. نظام الـ DM-Based Sales بيخلي العميل يشتري وهو حاسس إنه هو اللي اختار، مش إنه اتباع.
+    </div>
+
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">🎯 تأهيل الليد (Lead Qualification)</div>
+          <div class="step-desc">قبل أي كلام بيع، تأكد إن الشخص: ① لديه المشكلة التي تحلها ② يملك الميزانية ③ يمتلك صلاحية القرار ④ لديه توقيت مناسب. اسأل: "إيه أكبر تحدي بتواجهه في [مجال X] دلوقتي؟"</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">📞 الـ Strategy Call (15-30 دقيقة)</div>
+          <div class="step-desc">مش "عرض مبيعات" — هو <strong>جلسة استراتيجية</strong> تشخّص وضع العميل. الهيكل: ① الوضع الحالي ② النتيجة المطلوبة ③ العائق ④ إزاي البرنامج بيحل ده ⑤ العرض. لا تبيع قبل ما تتأكد إن العرض مناسب فعلاً.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">💬 DM Sales Script (للكورسات الأقل سعراً)</div>
+          <div class="step-desc">للكورسات $200-500: <strong>رسالة أولى</strong> = قيمة + سؤال. <strong>رسالة ثانية</strong> = معالجة المشكلة. <strong>رسالة ثالثة</strong> = العرض + الـ CTA. لا ترسل الثلاثة في يوم واحد. فترة بين كل رسالة 2-3 أيام.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-title">🔄 متابعة الليدز (Follow Up System)</div>
+          <div class="step-desc">80% من المبيعات تتم بعد <strong>5-12 رسالة متابعة</strong>. نظّم ليدزك في CRM بسيط (Notion أو Google Sheets). اتابع بقيمة: مقال، نتيجة عميل، سؤال جديد — مش "هل قررت؟" بس.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-title">🛑 معالجة الاعتراضات الشائعة</div>
+          <div class="step-desc">
+            <strong>"غالي عليّ"</strong> → "هو مش سعر، هو استثمار — إيه ثمن المشكلة لو فضلت موجودة؟"<br>
+            <strong>"هفكر"</strong> → "شايف إيه اللي بيخليك متتأكدش؟"<br>
+            <strong>"مش وقتي"</strong> → "لو الوقت مش هيجي — إيه اللي محتاج يتغير؟"
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <div class="highlight-title">💰 معادلة الإيراد الشهري</div>
+      <ul>
+        <li>اضرب: عدد الليدز الشهري × معدل التحويل (10-20%) × سعر الكورس</li>
+        <li>مثال: 100 ليد × 15% تحويل × $500 = $7,500 شهرياً</li>
+        <li>لتضاعف الإيراد: إما زود الليدز أو اخّل معدل التحويل أو ارفع السعر (أو الثلاثة)</li>
+        <li>الـ Mini Course بـ $37 على 100 شخص = $3,700 تتحول لإعلانات تجيب 300 ليد إضافية</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase-divider"><span class="phase-label">المرحلة السابعة — التوسع</span></div>
+
+  <!-- SECTION 7 -->
+  <div class="section" id="s7">
+    <div class="section-header">
+      <div class="step-badge">الخطوة السابعة</div>
+      <h2 class="section-title">📈 التوسع والإعلانات الممولة</h2>
+    </div>
+
+    <div class="section-intro">
+      لما يتثبت الـ Organic ويبدأ في البيع، جي للتوسع عبر الإعلانات. إسلام صلاح بيوضح إن <strong>الإعلانات مش بتصلح الـ Offer الباظ — هي بتضخّم الحاجة اللي شغّالة</strong>. لازم الـ Organic يشتغل أولاً.
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">📣</span>
+        <div class="card-title">LinkedIn Ads للـ Personal Brand</div>
+        <div class="card-desc">استخدم LinkedIn Lead Gen Forms للـ Webinar والـ Mini Course. Sponsored Content لتضخيم أفضل بوستاتك. Target: Job Title + Industry + Seniority Level.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">📘</span>
+        <div class="card-title">Meta Ads (Facebook/Instagram)</div>
+        <div class="card-desc">ضخّم الـ Mini Course عبر فيسبوك أدز. اعمل Retargeting لزوار صفحة الـ Landing Page. استخدم فيديو مدته 15-30 ثانية كـ Hook للإعلان.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🔄</span>
+        <div class="card-title">نظام الـ Retargeting</div>
+        <div class="card-desc">من شاف الفيديو 75%+ أو زار صفحة المبيعات ومشتراش: استهدفهم بإعلان جديد بـ Social Proof أقوى أو عرض خاص.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">📊</span>
+        <div class="card-title">قياس الـ ROAS</div>
+        <div class="card-desc">كل $1 تصرفه في إعلان لازم يجيب $3-5 على الأقل في المرحلة الأولى. الـ Mini Course بيحسّن الـ ROAS بشكل كبير لأنه بيموّل الإعلانات.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">🤖</span>
+        <div class="card-title">الأتمتة (Automation)</div>
+        <div class="card-desc">Email Sequence تلقائي بعد التسجيل في الليد ماجنيت: 5-7 إيميلات بقيمة + بيع تدريجي. استخدم Calendly للـ Strategy Calls أوتوماتيك.</div>
+      </div>
+      <div class="card">
+        <span class="card-icon">📐</span>
+        <div class="card-title">تحسين Landing Page</div>
+        <div class="card-desc">Headline قوي + فيديو VSL + Social Proof + Benefits + Guarantee + CTA واضح. اختبر A/B على الـ Headline وصورة الهيرو أولاً.</div>
+      </div>
+    </div>
+
+    <div class="result-card">
+      <div class="result-num">📐</div>
+      <div class="result-body">
+        <div class="result-title">مثال حقيقي من Adscope (ADHD Coach Case Study)</div>
+        <div class="result-desc">
+          إنفاق إعلانات: $10,861 فقط ← إيراد: $132,117 في 90 يوماً<br>
+          الأدوات: إعلانات ممولة فقط (بدون إنفلونسرز أو إيميل قديم) + Mini Course $17 + DM Sales + Masterclass 3 أيام<br>
+          <strong style="color:var(--gold)">النظام: الـ Resala Framework — يمول نفسه بنفسه من اليوم الأول</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="checklist">
+      <div class="checklist-title">🚀 خطة الـ 90 يوم الأولى (Roadmap)</div>
+      <div class="checklist-items">
+        <div class="check-item"><div class="check-box"></div><span><strong>الأسبوع 1-2:</strong> بناء بروفايل لينكد إن احترافي + تحديد الـ Niche والـ Ideal Client</span></div>
+        <div class="check-item"><div class="check-box"></div><span><strong>الأسبوع 3-4:</strong> صياغة الـ Offer + إنشاء Lead Magnet + Landing Page بسيطة</span></div>
+        <div class="check-item"><div class="check-box"></div><span><strong>الأسبوع 5-8:</strong> بدء نشر المحتوى (3-4 بوستات أسبوعياً) + Outreach يومي 10-20 اتصال</span></div>
+        <div class="check-item"><div class="check-box"></div><span><strong>الأسبوع 9-10:</strong> تنظيم أول ماستر كلاس مجاني + جمع Testimonials</span></div>
+        <div class="check-item"><div class="check-box"></div><span><strong>الأسبوع 11-12:</strong> إطلاق Mini Course + بدء Strategy Calls + جمع أول مبيعات</span></div>
+        <div class="check-item"><div class="check-box"></div><span><strong>شهر 4+:</strong> إضافة الإعلانات الممولة بعد تثبيت الـ Organic وإثبات الـ Offer</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final Note -->
+  <div class="section" style="margin-bottom: 40px;">
+    <div class="section-intro" style="border-right-color: #0077b5; margin-bottom: 0;">
+      📌 <strong>المصادر الأساسية للتعمق أكثر:</strong><br>
+      تابع إسلام صلاح على <strong>يوتيوب @officialeslamsalah</strong> للفيديوهات التفصيلية عن الفانلز والإعلانات •
+      صفحته على <strong>لينكد إن /in/eslamsalahofficial</strong> لمتابعة أحدث الاستراتيجيات •
+      فيسبوك <strong>/coacheslamsalah</strong> للمحتوى بالعربي •
+      تيك توك <strong>@officialeslamsalah</strong> للتيبس السريعة •
+      كورساته على <strong>courses.eslamsalah.com</strong> للتدريب العملي المتخصص
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  🎯 دليل معرفي مبني على منهجية <strong>إسلام صلاح</strong> — Adscope Consulting<br>
+  Gold Stevie Award Winner & TITAN Business Award 2025<br>
+  <span style="color:rgba(255,255,255,0.3); font-size:0.75rem;">هذا الدليل للأغراض التعليمية. النتائج تختلف حسب المجال والتطبيق والسوق.</span>
+</div>
+
+</body>
+</html>

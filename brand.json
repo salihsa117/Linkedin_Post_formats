@@ -1,0 +1,16 @@
+{
+  "name": "صالح أكاديمي",
+  "timezone": "Africa/Cairo",
+  "caption": {
+    "font": "Noto Sans Arabic",
+    "size": 74,
+    "color": "#FFFFFF",
+    "outline": "#000000",
+    "highlight": "#FFD23F",
+    "margin_bottom": 420,
+    "words_per_line": 4
+  },
+  "voice": "مدرّب عربي مباشر وواضح، بلهجة بيضاء مبسطة، بلا مبالغة ولا وعود مضمونة، يبدأ بفائدة عملية ثم يشرحها.",
+  "cta": "تابعنا للمزيد من صالح أكاديمي",
+  "hashtags_base": ["صالح_أكاديمي"]
+}

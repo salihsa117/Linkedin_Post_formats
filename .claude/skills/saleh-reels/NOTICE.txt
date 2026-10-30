@@ -1,0 +1,1 @@
+MIT License — original plugin majed-video by Majed Alzaabi (https://github.com/majedphotos/video-ad-editor). Modified for Saleh.
